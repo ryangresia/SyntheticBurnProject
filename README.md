@@ -1,1 +1,5 @@
 # KreveraProject
+To run a script, open it in Omniverse Code Beta 3.1.1, edit the texture_path to match your path to black_circle.png and then run the script to setup the scene so that you can preview it with replicator. Each script is the same except for the "plastic part" used. Any mesh can be used with these scripts as long as the origin falls within the mesh's convex hull. At a high level this script constructs the convex hull of the given mesh, places and rotates a projection of a synthetic burn mark on the hull, and then uses replicator to automate the process. The torus below highlights some if the shortcomings of this technique: its possible that a chosen projection position is not in front of the torus; if the projection direction happens to intersect with object twice the burn mark will be visible in both locations; its not possible to directly project on to a point that is not on the convex hull (e.g. the inner ring). The synthetic burn mark is a black circle that is randomly scaled and it is segmentable; modification to omniverse would is required further control over the texture.  
+
+
+![](./burn_torus_demo.gif)
