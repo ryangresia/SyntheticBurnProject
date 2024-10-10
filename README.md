@@ -1,5 +1,5 @@
 # Synthetic Burn Project
-At a high level these scripts construct the convex hull of the given mesh, places and rotates the projection of a synthetic burn mark on the hull, and then uses replicator to automate the process of generating the data.  To run a script, open it in Omniverse Code Beta 3.1.1 Script Editor, edit the texture_path to match your path to black_circle.png and then run the script to setup the scene so that you can preview it with replicator.  
+At a high level these scripts construct the convex hull of the given mesh, guaranteeing that a selected point is on the outside of the mesh, places and rotates the projection of a synthetic burn mark on the hull, and then uses replicator to automate the process of generating the data. To run a script, open it in Omniverse Code Beta 3.1.1 Script Editor, edit the texture_path to match your path to black_circle.png and then run the script to setup the scene so that you can preview it with replicator.  
 
 The torus demo below highlights some of the shortcomings of this technique: 
 - Its possible that a chosen projection position is not in front of the torus
